@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   def last_ten_trips(email, password)
     UserScraper.new.get_trip_info(email, password) do |t|
-      t
+      
     end
   end
 

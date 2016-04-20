@@ -1,5 +1,5 @@
 require 'Mechanize'
-class UserScraper
+class TripScraper
   def get_trip_info(email, password)
     agent = Mechanize.new { |agent|
       agent.ssl_version, 
